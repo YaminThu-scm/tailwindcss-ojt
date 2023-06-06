@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Impact Bootstrap Template - Portfolio Details</title>
+  <title>Impact Tailwindcss Template - Portfolio Details</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -19,14 +19,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- fontawesome File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- =======================================================
   * Template Name: Impact
@@ -40,27 +42,25 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+  <section id="topbar" class="topbar flex items-center">
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto flex justify-center md:justify-between">
+      <div class="contact-info flex items-center">
+        <i class="fa-regular fa-envelope flex items-center"></i><a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="fa-solid fa-mobile-screen-button items-center ms-6"></i><span>+1 5589 55488 55</span>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      <div class="social-links hidden md:flex items-center">
+        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
   </section><!-- End Top Bar -->
 
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header flex items-center">
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto flex items-center justify-between">
+      <a href="index.html" class="logo flex items-center">
         <h1>Impact<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
@@ -71,10 +71,10 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Drop Down</span><i class="fa-solid fa-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span><i class="fa-solid fa-chevron-down"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
@@ -92,8 +92,8 @@
         </ul>
       </nav><!-- .navbar -->
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <span class="mobile-nav-toggle mobile-nav-show"><i class="fa-solid fa-bars"></i></span>
+      <span class="mobile-nav-toggle mobile-nav-hide hidden"><i class="fa-solid fa-x"></i></span>
 
     </div>
   </header><!-- End Header -->
@@ -103,10 +103,10 @@
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
+      <div class="page-header flex items-center" style="background-image: url('');">
+        <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto relative">
+          <div class="flex justify-center">
+            <div class="lg:w-1/2 text-center lg:px-[0.75rem]">
               <h2>Portfolio Details</h2>
               <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
             </div>
@@ -114,7 +114,7 @@
         </div>
       </div>
       <nav>
-        <div class="container">
+        <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Portfolio Details</li>
@@ -125,11 +125,11 @@
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
-      <div class="container" data-aos="fade-up">
+      <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto" data-aos="fade-up">
 
-        <div class="position-relative h-100">
+        <div class="relative h-[100%]">
           <div class="slides-1 portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
+            <div class="swiper-wrapper items-center">
 
               <div class="swiper-slide">
                 <img src="assets/img/portfolio/app-1.jpg" alt="">
@@ -155,9 +155,9 @@
 
         </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
+        <div class="flex flex-wrap justify-between mt-6 mx-[-0.75rem]">
 
-          <div class="col-lg-8">
+          <div class="w-full lg:w-8/12 px-[0.75rem] mt-[1.5rem]">
             <div class="portfolio-description">
               <h2>This is an example of portfolio detail</h2>
               <p>
@@ -169,9 +169,9 @@
 
               <div class="testimonial-item">
                 <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
+                  <i class="fa-solid fa-quote-left"></i>
                   Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bi bi-quote quote-icon-right"></i>
+                  <i class="fa-solid fa-quote-right"></i>
                 </p>
                 <div>
                   <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
@@ -190,7 +190,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3">
+          <div class="w-full lg:w-3/12 px-[0.75rem] mt-[1.5rem]">
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
@@ -198,7 +198,7 @@
                 <li><strong>Client</strong> <span>ASU Company</span></li>
                 <li><strong>Project date</strong> <span>01 March, 2020</span></li>
                 <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+                <li><a href="#" class="btn-visit place-self-start">Visit Website</a></li>
               </ul>
             </div>
           </div>
@@ -213,22 +213,22 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto">
+      <div class="flex flex-wrap mt-[-1.5rem] mx-[-0.75rem]">
+        <div class="lg:w-5/12 w-full footer-info px-[0.75rem] mt-[1.5rem]">
+          <a href="index.html" class="logo flex items-center">
             <span>Impact</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <div class="social-links flex mt-6">
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="lg:w-2/12 w-6/12 footer-links px-[0.75rem] mt-[1.5rem]">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -239,7 +239,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="lg:w-2/12 w-6/12 footer-links px-[0.75rem] mt-[1.5rem]">
           <h4>Our Services</h4>
           <ul>
             <li><a href="#">Web Design</a></li>
@@ -250,7 +250,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <div class="lg:w-3/12 w-full footer-contact text-center md:text-left px-[0.75rem] mt-[1.5rem]">
           <h4>Contact Us</h4>
           <p>
             A108 Adam Street <br>
@@ -265,7 +265,7 @@
       </div>
     </div>
 
-    <div class="container mt-4">
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto mt-6">
       <div class="copyright">
         &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
       </div>
@@ -281,7 +281,7 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top flex items-center justify-center"><i class="fa-solid fa-arrow-up"></i></a>
 
   <div id="preloader"></div>
 
