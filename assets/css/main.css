@@ -1863,7 +1863,9 @@ section {
 
 .contact .php-email-form input[type=text]:focus-visible,
 .contact .php-email-form input[type=email]:focus-visible,
-.contact .php-email-form textarea:focus-visible {
+.contact .php-email-form textarea:focus-visible,
+.blog .comments .reply-form input:focus-visible,
+.blog .comments .reply-form textarea:focus-visible {
   outline: none !important;
 }
 
@@ -2516,7 +2518,7 @@ section {
 }
 
 .blog .comments .comment h5 .reply i {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .blog .comments .comment time {

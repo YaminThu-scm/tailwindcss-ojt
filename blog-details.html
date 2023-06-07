@@ -19,14 +19,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <!-- fontawesome File -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
   <!-- =======================================================
   * Template Name: Impact
@@ -40,27 +42,25 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+  <section id="topbar" class="topbar flex items-center">
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto flex justify-center md:justify-between">
+      <div class="contact-info flex items-center">
+        <i class="fa-regular fa-envelope flex items-center"></i><a href="mailto:contact@example.com">contact@example.com</a>
+        <i class="fa-solid fa-mobile-screen-button items-center ms-6"></i><span>+1 5589 55488 55</span>
       </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      <div class="social-links hidden md:flex items-center">
+        <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </div>
   </section><!-- End Top Bar -->
 
-  <header id="header" class="header d-flex align-items-center">
+  <header id="header" class="header flex items-center">
 
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto flex items-center justify-between">
+      <a href="index.html" class="logo flex items-center">
         <h1>Impact<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
@@ -71,10 +71,10 @@
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="#"><span>Drop Down</span><i class="fa-solid fa-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span><i class="fa-solid fa-chevron-down"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
                   <li><a href="#">Deep Drop Down 2</a></li>
@@ -92,331 +92,464 @@
         </ul>
       </nav><!-- .navbar -->
 
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <span class="mobile-nav-toggle mobile-nav-show"><i class="fa-solid fa-bars"></i></span>
+      <span class="mobile-nav-toggle mobile-nav-hide hidden"><i class="fa-solid fa-x"></i></span>
 
     </div>
-  </header><!-- End Header -->
+  </header>
   <!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs">
-      <div class="page-header d-flex align-items-center" style="background-image: url('');">
-        <div class="container position-relative">
-          <div class="row d-flex justify-content-center">
-            <div class="col-lg-6 text-center">
+      <div class="page-header flex items-center" style="background-image: url('')">
+        <div class="position-relative container mx-auto px-[0.75rem] xl:max-w-[1320px]">
+          <div class="mx-[-0.75rem] flex justify-center">
+            <div class="w-full px-[0.75rem] text-center lg:w-1/2">
               <h2>Blog Details</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p>
+                Odio et unde deleniti. Deserunt numquam exercitationem.
+                Officiis quo odio sint voluptas consequatur ut a odio
+                voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
+                ratione sint. Sit quaerat ipsum dolorem.
+              </p>
             </div>
           </div>
         </div>
       </div>
       <nav>
-        <div class="container">
+        <div class="container mx-auto px-[0.75rem] xl:max-w-[1320px]">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Blog Details</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Breadcrumbs -->
+    </div>
+    <!-- End Breadcrumbs -->
 
     <!-- ======= Blog Details Section ======= -->
     <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row g-5">
-
-          <div class="col-lg-8">
-
+      <div class="container mx-auto px-[0.75rem] xl:max-w-[1320px]" data-aos="fade-up">
+        <div class="mx-[-1.5rem] mt-[-3rem] flex flex-wrap">
+          <div class="mt-12 w-full px-6 lg:w-8/12">
             <article class="blog-details">
-
               <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid" />
               </div>
 
-              <h2 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h2>
+              <h2 class="title">
+                Dolorum optio tempore voluptas dignissimos cumque fuga qui
+                quibusdam quia
+              </h2>
 
               <div class="meta-top">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-details.html">John Doe</a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-details.html"><time datetime="2020-01-01">Jan 1, 2022</time></a></li>
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="blog-details.html">12 Comments</a></li>
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-user"></i><a href="blog-details.html">John Doe</a>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-clock"></i><a href="blog-details.html"><time datetime="2020-01-01">Jan 1,
+                        2022</time></a>
+                  </li>
+                  <li class="flex items-center">
+                    <i class="fa-regular fa-comment-dots"></i><a href="blog-details.html">12 Comments</a>
+                  </li>
                 </ul>
-              </div><!-- End meta top -->
+              </div>
+              <!-- End meta top -->
 
               <div class="content">
                 <p>
-                  Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                  Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.
+                  Similique neque nam consequuntur ad non maxime aliquam quas.
+                  Quibusdam animi praesentium. Aliquam et laboriosam eius aut
+                  nostrum quidem aliquid dicta. Et eveniet enim. Qui velit est
+                  ea dolorem doloremque deleniti aperiam unde soluta. Est cum
+                  et quod quos aut ut et sit sunt. Voluptate porro consequatur
+                  assumenda perferendis dolore.
                 </p>
 
                 <p>
-                  Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.
+                  Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non
+                  reiciendis. Sequi in accusamus harum vel aspernatur.
+                  Excepturi numquam nihil cumque odio. Et voluptate
+                  cupiditate.
                 </p>
 
                 <blockquote>
                   <p>
-                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                    Et vero doloremque tempore voluptatem ratione vel aut.
+                    Deleniti sunt animi aut. Aut eos aliquam doloribus minus
+                    autem quos.
                   </p>
                 </blockquote>
 
                 <p>
-                  Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                  Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
+                  Sed quo laboriosam qui architecto. Occaecati repellendus
+                  omnis dicta inventore tempore provident voluptas mollitia
+                  aliquid. Id repellendus quia. Asperiores nihil magni dicta
+                  est suscipit perspiciatis. Voluptate ex rerum assumenda
+                  dolores nihil quaerat. Dolor porro tempora et quibusdam
+                  voluptas. Beatae aut at ad qui tempore corrupti velit
+                  quisquam rerum. Omnis dolorum exercitationem harum qui qui
+                  blanditiis neque. Iusto autem itaque. Repudiandae hic quae
+                  aspernatur ea neque qui. Architecto voluptatem magni. Vel
+                  magnam quod et tempora deleniti error rerum nihil tempora.
                 </p>
 
                 <h3>Et quae iure vel ut odit alias.</h3>
                 <p>
-                  Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                  Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
+                  Officiis animi maxime nulla quo et harum eum quis a. Sit hic
+                  in qui quos fugit ut rerum atque. Optio provident dolores
+                  atque voluptatem rem excepturi molestiae qui. Voluptatem
+                  laborum omnis ullam quibusdam perspiciatis nulla nostrum.
+                  Voluptatum est libero eum nesciunt aliquid qui. Quia et
+                  suscipit non sequi. Maxime sed odit. Beatae nesciunt
+                  nesciunt accusamus quia aut ratione aspernatur dolor. Sint
+                  harum eveniet dicta exercitationem minima. Exercitationem
+                  omnis asperiores natus aperiam dolor consequatur id ex sed.
+                  Quibusdam rerum dolores sint consequatur quidem ea. Beatae
+                  minima sunt libero soluta sapiente in rem assumenda. Et qui
+                  odit voluptatem. Cum quibusdam voluptatem voluptatem
+                  accusamus mollitia aut atque aut.
                 </p>
-                <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
+                <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="" />
 
                 <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                 <p>
-                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                  Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam
+                  porro amet nostrum. In assumenda quia quae a id praesentium.
+                  Quos deleniti libero sed occaecati aut porro autem.
+                  Consectetur sed excepturi sint non placeat quia repellat
+                  incidunt labore. Autem facilis hic dolorum dolores vel.
+                  Consectetur quasi id et optio praesentium aut asperiores
+                  eaque aut. Explicabo omnis quibusdam esse. Ex libero illum
+                  iusto totam et ut aut blanditiis. Veritatis numquam ut illum
+                  ut a quam vitae.
                 </p>
                 <p>
-                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime
+                  enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia
+                  nisi asperiores est veniam.
                 </p>
-
-              </div><!-- End post content -->
+              </div>
+              <!-- End post content -->
 
               <div class="meta-bottom">
-                <i class="bi bi-folder"></i>
+                <i class="fa-regular fa-folder-closed"></i>
                 <ul class="cats">
                   <li><a href="#">Business</a></li>
                 </ul>
 
-                <i class="bi bi-tags"></i>
+                <i class="fa-solid fa-tags"></i>
                 <ul class="tags">
                   <li><a href="#">Creative</a></li>
                   <li><a href="#">Tips</a></li>
                   <li><a href="#">Marketing</a></li>
                 </ul>
-              </div><!-- End meta bottom -->
+              </div>
+              <!-- End meta bottom -->
+            </article>
+            <!-- End blog post -->
 
-            </article><!-- End blog post -->
-
-            <div class="post-author d-flex align-items-center">
-              <img src="assets/img/blog/blog-author.jpg" class="rounded-circle flex-shrink-0" alt="">
+            <div class="post-author flex items-center">
+              <img src="assets/img/blog/blog-author.jpg" class="shrink-0 rounded-full" alt="" />
               <div>
                 <h4>Jane Smith</h4>
                 <div class="social-links">
-                  <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
-                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                  <a href="https://twitters.com/#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="https://facebook.com/#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://instagram.com/#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <p>
-                  Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                  Itaque quidem optio quia voluptatibus dolorem dolor. Modi
+                  eum sed possimus accusantium. Quas repellat voluptatem
+                  officia numquam sint aspernatur voluptas. Esse et
+                  accusantium ut unde voluptas.
                 </p>
               </div>
-            </div><!-- End post author -->
+            </div>
+            <!-- End post author -->
 
             <div class="comments">
-
               <h4 class="comments-count">8 Comments</h4>
 
               <div id="comment-1" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-1.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Georgia Reader</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                <div class="flex">
+                  <div class="comment-img">
+                    <img src="assets/img/blog/comments-1.jpg" alt="" />
+                  </div>
+                  <div class="flex-1">
+                    <h5>
+                      <a href="">Georgia Reader</a>
+                      <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
+                    </h5>
                     <time datetime="2020-01-01">01 Jan,2022</time>
                     <p>
-                      Et rerum totam nisi. Molestiae vel quam dolorum vel voluptatem et et. Est ad aut sapiente quis molestiae est qui cum soluta.
-                      Vero aut rerum vel. Rerum quos laboriosam placeat ex qui. Sint qui facilis et.
+                      Et rerum totam nisi. Molestiae vel quam dolorum vel
+                      voluptatem et et. Est ad aut sapiente quis molestiae est
+                      qui cum soluta. Vero aut rerum vel. Rerum quos
+                      laboriosam placeat ex qui. Sint qui facilis et.
                     </p>
                   </div>
                 </div>
-              </div><!-- End comment #1 -->
+              </div>
+              <!-- End comment #1 -->
 
               <div id="comment-2" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-2.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Aron Alvarado</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                <div class="flex">
+                  <div class="comment-img">
+                    <img src="assets/img/blog/comments-2.jpg" alt="" />
+                  </div>
+                  <div class="flex-1">
+                    <h5>
+                      <a href="">Aron Alvarado</a>
+                      <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
+                    </h5>
                     <time datetime="2020-01-01">01 Jan,2022</time>
                     <p>
-                      Ipsam tempora sequi voluptatem quis sapiente non. Autem itaque eveniet saepe. Officiis illo ut beatae.
+                      Ipsam tempora sequi voluptatem quis sapiente non. Autem
+                      itaque eveniet saepe. Officiis illo ut beatae.
                     </p>
                   </div>
                 </div>
 
                 <div id="comment-reply-1" class="comment comment-reply">
-                  <div class="d-flex">
-                    <div class="comment-img"><img src="assets/img/blog/comments-3.jpg" alt=""></div>
-                    <div>
-                      <h5><a href="">Lynda Small</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                  <div class="flex">
+                    <div class="comment-img">
+                      <img src="assets/img/blog/comments-3.jpg" alt="" />
+                    </div>
+                    <div class="flex-1">
+                      <h5>
+                        <a href="">Lynda Small</a>
+                        <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
+                      </h5>
                       <time datetime="2020-01-01">01 Jan,2022</time>
                       <p>
-                        Enim ipsa eum fugiat fuga repellat. Commodi quo quo dicta. Est ullam aspernatur ut vitae quia mollitia id non. Qui ad quas nostrum rerum sed necessitatibus aut est. Eum officiis sed repellat maxime vero nisi natus. Amet nesciunt nesciunt qui illum omnis est et dolor recusandae.
-
-                        Recusandae sit ad aut impedit et. Ipsa labore dolor impedit et natus in porro aut. Magnam qui cum. Illo similique occaecati nihil modi eligendi. Pariatur distinctio labore omnis incidunt et illum. Expedita et dignissimos distinctio laborum minima fugiat.
-
-                        Libero corporis qui. Nam illo odio beatae enim ducimus. Harum reiciendis error dolorum non autem quisquam vero rerum neque.
+                        Enim ipsa eum fugiat fuga repellat. Commodi quo quo
+                        dicta. Est ullam aspernatur ut vitae quia mollitia id
+                        non. Qui ad quas nostrum rerum sed necessitatibus aut
+                        est. Eum officiis sed repellat maxime vero nisi natus.
+                        Amet nesciunt nesciunt qui illum omnis est et dolor
+                        recusandae. Recusandae sit ad aut impedit et. Ipsa
+                        labore dolor impedit et natus in porro aut. Magnam qui
+                        cum. Illo similique occaecati nihil modi eligendi.
+                        Pariatur distinctio labore omnis incidunt et illum.
+                        Expedita et dignissimos distinctio laborum minima
+                        fugiat. Libero corporis qui. Nam illo odio beatae enim
+                        ducimus. Harum reiciendis error dolorum non autem
+                        quisquam vero rerum neque.
                       </p>
                     </div>
                   </div>
 
                   <div id="comment-reply-2" class="comment comment-reply">
-                    <div class="d-flex">
-                      <div class="comment-img"><img src="assets/img/blog/comments-4.jpg" alt=""></div>
-                      <div>
-                        <h5><a href="">Sianna Ramsay</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                    <div class="flex">
+                      <div class="comment-img">
+                        <img src="assets/img/blog/comments-4.jpg" alt="" />
+                      </div>
+                      <div class="flex-1">
+                        <h5>
+                          <a href="">Sianna Ramsay</a>
+                          <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
+                        </h5>
                         <time datetime="2020-01-01">01 Jan,2022</time>
                         <p>
-                          Et dignissimos impedit nulla et quo distinctio ex nemo. Omnis quia dolores cupiditate et. Ut unde qui eligendi sapiente omnis ullam. Placeat porro est commodi est officiis voluptas repellat quisquam possimus. Perferendis id consectetur necessitatibus.
+                          Et dignissimos impedit nulla et quo distinctio ex
+                          nemo. Omnis quia dolores cupiditate et. Ut unde qui
+                          eligendi sapiente omnis ullam. Placeat porro est
+                          commodi est officiis voluptas repellat quisquam
+                          possimus. Perferendis id consectetur necessitatibus.
                         </p>
                       </div>
                     </div>
-
-                  </div><!-- End comment reply #2-->
-
-                </div><!-- End comment reply #1-->
-
-              </div><!-- End comment #2-->
+                  </div>
+                  <!-- End comment reply #2-->
+                </div>
+                <!-- End comment reply #1-->
+              </div>
+              <!-- End comment #2-->
 
               <div id="comment-3" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-5.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Nolan Davidson</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                <div class="flex">
+                  <div class="comment-img">
+                    <img src="assets/img/blog/comments-5.jpg" alt="" />
+                  </div>
+                  <div class="flex-1">
+                    <h5>
+                      <a href="">Nolan Davidson</a>
+                      <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
+                    </h5>
                     <time datetime="2020-01-01">01 Jan,2022</time>
                     <p>
-                      Distinctio nesciunt rerum reprehenderit sed. Iste omnis eius repellendus quia nihil ut accusantium tempore. Nesciunt expedita id dolor exercitationem aspernatur aut quam ut. Voluptatem est accusamus iste at.
-                      Non aut et et esse qui sit modi neque. Exercitationem et eos aspernatur. Ea est consequuntur officia beatae ea aut eos soluta. Non qui dolorum voluptatibus et optio veniam. Quam officia sit nostrum dolorem.
+                      Distinctio nesciunt rerum reprehenderit sed. Iste omnis
+                      eius repellendus quia nihil ut accusantium tempore.
+                      Nesciunt expedita id dolor exercitationem aspernatur aut
+                      quam ut. Voluptatem est accusamus iste at. Non aut et et
+                      esse qui sit modi neque. Exercitationem et eos
+                      aspernatur. Ea est consequuntur officia beatae ea aut
+                      eos soluta. Non qui dolorum voluptatibus et optio
+                      veniam. Quam officia sit nostrum dolorem.
                     </p>
                   </div>
                 </div>
-
-              </div><!-- End comment #3 -->
+              </div>
+              <!-- End comment #3 -->
 
               <div id="comment-4" class="comment">
-                <div class="d-flex">
-                  <div class="comment-img"><img src="assets/img/blog/comments-6.jpg" alt=""></div>
-                  <div>
-                    <h5><a href="">Kay Duggan</a> <a href="#" class="reply"><i class="bi bi-reply-fill"></i> Reply</a></h5>
+                <div class="flex">
+                  <div class="comment-img">
+                    <img src="assets/img/blog/comments-6.jpg" alt="" />
+                  </div>
+                  <div class="flex-1">
+                    <h5>
+                      <a href="">Kay Duggan</a>
+                      <a href="#" class="reply"><i class="fa-solid fa-reply"></i> Reply</a>
+                    </h5>
                     <time datetime="2020-01-01">01 Jan,2022</time>
                     <p>
-                      Dolorem atque aut. Omnis doloremque blanditiis quia eum porro quis ut velit tempore. Cumque sed quia ut maxime. Est ad aut cum. Ut exercitationem non in fugiat.
+                      Dolorem atque aut. Omnis doloremque blanditiis quia eum
+                      porro quis ut velit tempore. Cumque sed quia ut maxime.
+                      Est ad aut cum. Ut exercitationem non in fugiat.
                     </p>
                   </div>
                 </div>
-
-              </div><!-- End comment #4 -->
+              </div>
+              <!-- End comment #4 -->
 
               <div class="reply-form">
-
                 <h4>Leave a Reply</h4>
-                <p>Your email address will not be published. Required fields are marked * </p>
+                <p>
+                  Your email address will not be published. Required fields
+                  are marked *
+                </p>
                 <form action="">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input name="name" type="text" class="form-control" placeholder="Your Name*">
+                  <div class="mx-[-0.75rem] flex flex-wrap">
+                    <div class="form-group w-full px-[0.75rem] md:w-6/12">
+                      <input name="name" type="text" class="input-style" placeholder="Your Name*" />
                     </div>
-                    <div class="col-md-6 form-group">
-                      <input name="email" type="text" class="form-control" placeholder="Your Email*">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col form-group">
-                      <input name="website" type="text" class="form-control" placeholder="Your Website">
+                    <div class="form-group w-full px-[0.75rem] md:w-6/12">
+                      <input name="email" type="text" class="input-style" placeholder="Your Email*" />
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col form-group">
-                      <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
+                  <div>
+                    <div class="form-group w-full">
+                      <input name="website" type="text" class="input-style" placeholder="Your Website" />
                     </div>
                   </div>
-                  <button type="submit" class="btn btn-primary">Post Comment</button>
-
+                  <div>
+                    <div class="form-group w-full">
+                      <textarea name="comment" class="input-style" placeholder="Your Comment*"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary text-white">
+                    Post Comment
+                  </button>
                 </form>
-
               </div>
-
-            </div><!-- End blog comments -->
-
+            </div>
+            <!-- End blog comments -->
           </div>
 
-          <div class="col-lg-4">
-
+          <div class="mt-12 w-full px-6 lg:w-4/12">
             <div class="sidebar">
-
               <div class="sidebar-item search-form">
                 <h3 class="sidebar-title">Search</h3>
-                <form action="" class="mt-3">
-                  <input type="text">
-                  <button type="submit"><i class="bi bi-search"></i></button>
+                <form action="" class="mt-4">
+                  <input type="text" />
+                  <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
                 </form>
-              </div><!-- End sidebar search formn-->
+              </div>
+              <!-- End sidebar search formn-->
 
               <div class="sidebar-item categories">
                 <h3 class="sidebar-title">Categories</h3>
-                <ul class="mt-3">
-                  <li><a href="#">General <span>(25)</span></a></li>
-                  <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                  <li><a href="#">Travel <span>(5)</span></a></li>
-                  <li><a href="#">Design <span>(22)</span></a></li>
-                  <li><a href="#">Creative <span>(8)</span></a></li>
-                  <li><a href="#">Educaion <span>(14)</span></a></li>
+                <ul class="mt-4">
+                  <li>
+                    <a href="#">General <span>(25)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">Lifestyle <span>(12)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">Travel <span>(5)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">Design <span>(22)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">Creative <span>(8)</span></a>
+                  </li>
+                  <li>
+                    <a href="#">Educaion <span>(14)</span></a>
+                  </li>
                 </ul>
-              </div><!-- End sidebar categories-->
+              </div>
+              <!-- End sidebar categories-->
 
               <div class="sidebar-item recent-posts">
                 <h3 class="sidebar-title">Recent Posts</h3>
 
-                <div class="mt-3">
-
-                  <div class="post-item mt-3">
-                    <img src="assets/img/blog/blog-recent-1.jpg" alt="">
+                <div class="mt-4">
+                  <div class="post-item mt-4">
+                    <img src="assets/img/blog/blog-recent-1.jpg" alt="" />
                     <div>
-                      <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
+                      <h4>
+                        <a href="blog-details.html">Nihil blanditiis at in nihil autem</a>
+                      </h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div>
+                  <!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-2.jpg" alt="">
+                    <img src="assets/img/blog/blog-recent-2.jpg" alt="" />
                     <div>
-                      <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
+                      <h4>
+                        <a href="blog-details.html">Quidem autem et impedit</a>
+                      </h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div>
+                  <!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-3.jpg" alt="">
+                    <img src="assets/img/blog/blog-recent-3.jpg" alt="" />
                     <div>
-                      <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                      <h4>
+                        <a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a>
+                      </h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div>
+                  <!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-4.jpg" alt="">
+                    <img src="assets/img/blog/blog-recent-4.jpg" alt="" />
                     <div>
-                      <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
+                      <h4>
+                        <a href="blog-details.html">Laborum corporis quo dara net para</a>
+                      </h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
+                  </div>
+                  <!-- End recent post item-->
 
                   <div class="post-item">
-                    <img src="assets/img/blog/blog-recent-5.jpg" alt="">
+                    <img src="assets/img/blog/blog-recent-5.jpg" alt="" />
                     <div>
-                      <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                      <h4>
+                        <a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a>
+                      </h4>
                       <time datetime="2020-01-01">Jan 1, 2020</time>
                     </div>
-                  </div><!-- End recent post item-->
-
+                  </div>
+                  <!-- End recent post item-->
                 </div>
-
-              </div><!-- End sidebar recent posts-->
+              </div>
+              <!-- End sidebar recent posts-->
 
               <div class="sidebar-item tags">
                 <h3 class="sidebar-title">Tags</h3>
@@ -433,37 +566,37 @@
                   <li><a href="#">Tips</a></li>
                   <li><a href="#">Marketing</a></li>
                 </ul>
-              </div><!-- End sidebar tags-->
-
-            </div><!-- End Blog Sidebar -->
-
+              </div>
+              <!-- End sidebar tags-->
+            </div>
+            <!-- End Blog Sidebar -->
           </div>
         </div>
-
       </div>
-    </section><!-- End Blog Details Section -->
+    </section>
+    <!-- End Blog Details Section -->
+  </main>
+  <!-- End #main -->
 
-  </main><!-- End #main -->
+   <!-- ======= Footer ======= -->
+   <footer id="footer" class="footer">
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto">
+      <div class="flex flex-wrap mt-[-1.5rem] mx-[-0.75rem]">
+        <div class="lg:w-5/12 w-full footer-info px-[0.75rem] mt-[1.5rem]">
+          <a href="index.html" class="logo flex items-center">
             <span>Impact</span>
           </a>
           <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <div class="social-links flex mt-6">
+            <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
           </div>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="lg:w-2/12 w-6/12 footer-links px-[0.75rem] mt-[1.5rem]">
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
@@ -474,7 +607,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-2 col-6 footer-links">
+        <div class="lg:w-2/12 w-6/12 footer-links px-[0.75rem] mt-[1.5rem]">
           <h4>Our Services</h4>
           <ul>
             <li><a href="#">Web Design</a></li>
@@ -485,7 +618,7 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <div class="lg:w-3/12 w-full footer-contact text-center md:text-left px-[0.75rem] mt-[1.5rem]">
           <h4>Contact Us</h4>
           <p>
             A108 Adam Street <br>
@@ -500,7 +633,7 @@
       </div>
     </div>
 
-    <div class="container mt-4">
+    <div class="container xl:max-w-[1320px] px-[0.75rem] mx-auto mt-6">
       <div class="copyright">
         &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
       </div>
@@ -513,15 +646,14 @@
       </div>
     </div>
 
-  </footer><!-- End Footer -->
+   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top flex items-center justify-center"><i class="fa-solid fa-arrow-up"></i></a>
 
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
